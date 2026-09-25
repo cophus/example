@@ -179,7 +179,7 @@ function render({ model, el }) {
 
   function drawDiff(a) {
     const [g, w, dpr] = setup(cvD);
-    const N = Math.min(900, Math.round(w * dpr));
+    const N = Math.min(640, Math.round(w * dpr));
     if (offD.width !== N) { offD.width = N; offD.height = N; }
     const ctx = offD.getContext("2d"), id = ctx.createImageData(N, N), px = id.data;
     const H = Math.max(20, 1.4 * a + 14);        // half field of view (mrad)
@@ -246,7 +246,7 @@ function render({ model, el }) {
     // faint outlines of every disk once they overlap: the lens network
     if (2 * a > G_MRAD) {
       g.strokeStyle = "rgba(255,255,255,0.13)"; g.lineWidth = 1;
-      const nn = Math.ceil((H + a) / G_MRAD);
+      const nn = Math.min(4, Math.ceil((H + a) / G_MRAD));
       for (let m = -nn; m <= nn; m++) for (let n = -nn; n <= nn; n++) {
         g.beginPath(); g.arc(cx + n * G_MRAD * sc, cy + m * G_MRAD * sc, a * sc, 0, 2 * Math.PI); g.stroke();
       }
