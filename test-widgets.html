@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4D-STEM widget preview</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 980px; margin: 20px auto; padding: 0 16px;
+    background: #fff; color: #1a1a1a; }
+  html.dark body { background: #181616; color: #eee; }
+  h2 { font-size: 16px; margin: 28px 0 8px; }
+  #toggle { position: fixed; top: 10px; right: 10px; z-index: 10; padding: 6px 12px; }
+</style>
+</head>
+<body>
+<button id="toggle">toggle dark</button>
+<h1 style="font-size:20px">4D-STEM widget preview</h1>
+<h2>virtual-detector.js</h2><div id="w1"></div>
+<h2>convergence-angle.js</h2><div id="w2"></div>
+<h2>strain-lattice.js</h2><div id="w3"></div>
+<script type="module">
+  const model = { get() {}, set() {}, on() {}, save_changes() {} };
+  const names = ["virtual-detector", "convergence-angle", "strain-lattice"];
+  for (let i = 0; i < names.length; i++) {
+    const mod = await import(`./widgets/${names[i]}.js`);
+    mod.default.render({ model, el: document.getElementById("w" + (i + 1)) });
+  }
+  document.getElementById("toggle").addEventListener("click", () =>
+    document.documentElement.classList.toggle("dark"));
+</script>
+</body>
+</html>

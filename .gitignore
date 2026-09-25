@@ -1,0 +1,6 @@
+# MyST build outputs
+_build/
+# Python environment (uv venv with mystmd)
+.venv/
+.DS_Store
+__pycache__/

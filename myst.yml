@@ -1,0 +1,91 @@
+# MyST configuration for the Opportunities for 4D-STEM site.
+# Built from the Colin Ophus Lab teaching-site template (matsci323teaching).
+version: 1
+project:
+  id: opportunities-4dstem
+  title: Opportunities for 4D-STEM
+  description: >
+    Four-dimensional scanning transmission electron microscopy (4D-STEM):
+    experiment design, crystalline and amorphous structure mapping, phase
+    contrast imaging and ptychography, and 5D-STEM experiments.
+  keywords:
+    - 4D-STEM
+    - electron microscopy
+    - strain mapping
+    - orientation mapping
+    - ptychography
+  github: https://github.com/cophus/example
+  authors:
+    - name: Colin Ophus
+      email: cophus@stanford.edu
+  abbreviations:
+    4D-STEM: four-dimensional scanning transmission electron microscopy
+    5D-STEM: 4D-STEM recorded over an additional dimension (time, tilt, or applied stimulus)
+    ACOM: automated crystal orientation mapping
+    ADF: annular dark field
+    BF: bright field
+    CBED: convergent beam electron diffraction
+    CoM: center of mass
+    CTF: contrast transfer function
+    DF: dark field
+    DGP: deep generative prior
+    DIP: deep image prior
+    DPC: differential phase contrast
+    FEM: fluctuation electron microscopy
+    FIB: focused ion beam
+    HAADF: high-angle annular dark field
+    HRTEM: high-resolution transmission electron microscopy
+    HZO: hafnium zirconium oxide
+    MEA: medium entropy alloy
+    MRO: medium range order
+    PDF: pair distribution function
+    RDF: radial distribution function
+    SRO: short range order
+    STEM: scanning transmission electron microscopy
+    TEM: transmission electron microscopy
+  plugins:
+    - plugins/answer.mjs
+  exclude:
+    - README.md
+    - test-widgets.html
+  toc:
+    - file: index.md
+    - title: "1. STEM and 4D-STEM"
+      children:
+        - file: modules/stem/what-is-4dstem.md
+        - file: modules/stem/experiment-design.md
+    - title: "2. Crystalline Samples"
+      children:
+        - file: modules/crystals/organic-films.md
+        - file: modules/crystals/strain-mapping.md
+        - file: modules/crystals/orientation-mapping.md
+    - title: "3. Disordered Samples"
+      children:
+        - file: modules/disordered/pair-distribution-function.md
+        - file: modules/disordered/fem-and-amorphous-strain.md
+    - title: "4. Phase Contrast"
+      children:
+        - file: modules/phase-contrast/differential-phase-contrast.md
+        - file: modules/phase-contrast/ptychography.md
+    - title: "5. Beyond 4D-STEM"
+      children:
+        - file: modules/beyond/beyond-4dstem.md
+    - file: resources.md
+site:
+  template: book-theme
+  title: Opportunities for 4D-STEM
+  parts:
+    primary_sidebar_footer: parts/sidebar-footer.md
+  options:
+    style: ./style.css
+    logo_text: Opportunities for 4D-STEM
+    folders: true
+    outline_maxdepth: 2
+    hide_footer_links: true
+  nav:
+    - title: COLab
+      url: https://colab.stanford.edu/
+    - title: py4DSTEM
+      url: https://github.com/py4dstem/py4DSTEM
+    - title: quantEM
+      url: https://github.com/electronmicroscopy/quantem
