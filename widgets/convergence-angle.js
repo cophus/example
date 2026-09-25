@@ -129,13 +129,14 @@ function render({ model, el }) {
     g.font = "12.5px system-ui"; g.lineWidth = 3; g.strokeStyle = "rgba(0,0,0,0.75)";
     g.strokeText(txt, x, y); g.fillStyle = col || "#eee"; g.fillText(txt, x, y);
   }
-  let offR = document.createElement("canvas"), offD = document.createElement("canvas");
+  let offR = document.createElement("canvas"), offD = document.createElement("canvas"), bufD = null, bufR = null;
 
   function drawReal(a) {
     const [g, w] = setup(cvR);
     const N = Math.round(w);                     // compute at CSS resolution
-    if (offR.width !== N) { offR.width = N; offR.height = N; }
-    const ctx = offR.getContext("2d"), id = ctx.createImageData(N, N), px = id.data;
+    const ctx = offR.getContext("2d");
+    if (offR.width !== N || !bufR) { offR.width = N; offR.height = N; bufR = ctx.createImageData(N, N); }
+    const id = bufR, px = id.data;
     const fw = fwhmNm(a);
     const L = Math.min(40, Math.max(1.6, 7 * fw));   // field of view (nm)
     const ps = L / N;                                 // nm per pixel
@@ -180,8 +181,12 @@ function render({ model, el }) {
   function drawDiff(a) {
     const [g, w, dpr] = setup(cvD);
     const N = Math.min(640, Math.round(w * dpr));
-    if (offD.width !== N) { offD.width = N; offD.height = N; }
-    const ctx = offD.getContext("2d"), id = ctx.createImageData(N, N), px = id.data;
+    const ctx = offD.getContext("2d");
+    if (offD.width !== N || !bufD) {
+      offD.width = N; offD.height = N;
+      bufD = { id: ctx.createImageData(N, N), I: new Float32Array(N * N), C: new Uint8Array(N * N) };
+    }
+    const id = bufD.id, px = id.data;
     const H = Math.max(20, 1.4 * a + 14);        // half field of view (mrad)
     const mpp = 2 * H / N;                        // mrad per pixel
     const r = Math.max(a, 1.4 * mpp * dpr);       // keep tiny spots visible
@@ -197,7 +202,7 @@ function render({ model, el }) {
     // intensity per unit area falls as 1/alpha^2, so fixed log display
     let vmax = 0;
     const rowI = new Float32Array(N), rowC = new Int16Array(N);
-    const Ibuf = new Float32Array(N * N), Cbuf = new Uint8Array(N * N);
+    const Ibuf = bufD.I, Cbuf = bufD.C;
     for (let j = 0; j < N; j++) {
       const ky = (j + 0.5 - N / 2) * mpp;
       cnt.fill(0); acc.fill(0);

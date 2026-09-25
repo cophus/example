@@ -41,12 +41,12 @@ Undersampling (top) and oversampling (bottom) of the probe positions relative to
 
 ## Focus and exposure
 
-TEM and STEM experiments on extremely beam sensitive samples both require "blind" exposure, meaning we cannot focus or align on the region we measure [K. Bustillo et al., Accounts of Chemical Research 54, 2543 (2021)]. TEM with plane wave illumination is more difficult to focus blindly, requires thinner samples, and exposes a larger sample region than the detector records, which limits the usable field of view. STEM with a small convergence angle has a large depth of field and small diffraction spots, and a defocused STEM probe still produces useful diffraction signals.
+TEM and STEM experiments on extremely beam sensitive samples both require "blind" exposure, meaning we cannot focus or align on the region we measure [@bustillo2021]. TEM with plane wave illumination is more difficult to focus blindly, requires thinner samples, and exposes a larger sample region than the detector records, which limits the usable field of view. STEM with a small convergence angle has a large depth of field and small diffraction spots, and a defocused STEM probe still produces useful diffraction signals.
 
 :::{figure} ../../images/slides/slide-016.jpg
 :alt: comparison of TEM and STEM illumination for beam sensitive samples
 
-TEM versus STEM for beam sensitive samples. K. Bustillo et al., Accounts of Chemical Research 54, 2543 (2021).
+TEM versus STEM for beam sensitive samples [@bustillo2021].
 :::
 
 ## Cryo and drift
@@ -56,15 +56,15 @@ Cooling the sample improves the signal-to-noise of individual reflections in bea
 :::{figure} ../../images/slides/slide-017.jpg
 :alt: cryo diffraction of acid-polyethylene and scan direction relative to the holder axis
 
-Cryo cooling improves the signal-to-noise of acid-polyethylene diffraction, and aligning the fast scan direction perpendicular to the holder axis simplifies the drift distortion. K. Bustillo et al., Accounts of Chemical Research 54, 2543 (2021).
+Cryo cooling improves the signal-to-noise of acid-polyethylene diffraction, and aligning the fast scan direction perpendicular to the holder axis simplifies the drift distortion [@bustillo2021].
 :::
 
 ## Electron beam damage
 
-Beam damage destroys the long-range order of sensitive materials within seconds. In acid-polyethylene, the diffraction from a defined area decays over 4 seconds [Yan et al., Polymer 135 (2018)], and in a polymer electrolyte recorded with a 50 × 50 scan and 10 nm steps, the damaged probe positions are visible directly in the sample afterwards [Y. Xie et al., Science Advances 9, eadc9721 (2023)]. We must either keep the total local exposure well below the critical dose, or take steps large enough that each probe position lands on undamaged material.
+Beam damage destroys the long-range order of sensitive materials within seconds. In acid-polyethylene, the diffraction from a defined area decays over 4 seconds [@yan2018], and in an electrolyte recorded with a 50 × 50 scan and 10 nm steps, the damaged probe positions are visible directly in the sample afterwards [@xie2023]. We must either keep the total local exposure well below the critical dose, or take steps large enough that each probe position lands on undamaged material.
 
 :::{figure} ../../images/slides/slide-018.jpg
-:alt: diffraction decay in a time series and visible probe damage in a polymer electrolyte
+:alt: diffraction decay in a time series and visible probe damage in an electrolyte
 
-Loss of long-range order in a diffraction time series of acid-polyethylene (left) and probe positions visible after a 4D-STEM scan of a polymer electrolyte (right).
+Loss of long-range order in a diffraction time series of acid-polyethylene (left) and probe positions visible after a 4D-STEM scan of an electrolyte (right) [@yan2018; @xie2023].
 :::

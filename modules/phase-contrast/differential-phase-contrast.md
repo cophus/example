@@ -4,15 +4,15 @@ title: Differential phase contrast
 
 # Phase contrast and differential phase contrast
 
-Thin samples made of light elements scatter electrons weakly, and mainly shift the phase of the electron wave. In conventional high-resolution TEM (HRTEM), we convert this phase shift into image contrast with defocus and aberrations. For example, phase contrast HRTEM of polycrystalline graphene suspended over a TEM grid resolves the atomic structure of the grain boundaries [C. Ophus, H. I. Rasool, M. Linck, A. Zettl & J. Ciston, Advanced Structural and Chemical Imaging 2, 15 (2016)].
+Thin samples made of light elements scatter electrons weakly, and mainly shift the phase of the electron wave. In conventional high-resolution TEM (HRTEM), we convert this phase shift into image contrast with defocus and aberrations. For example, phase contrast HRTEM of polycrystalline graphene suspended over a TEM grid resolves the atomic structure of the grain boundaries [@ophus2016].
 
 :::{figure} ../../images/slides/slide-069.jpg
 :alt: grain boundary in polycrystalline graphene imaged by HRTEM
 
-Grain boundaries in polycrystalline graphene imaged with phase contrast HRTEM, and the distribution of misorientation angles. C. Ophus et al., Advanced Structural and Chemical Imaging 2, 15 (2016).
+Grain boundaries in polycrystalline graphene imaged with phase contrast HRTEM, and the distribution of misorientation angles [@ophus2016].
 :::
 
-In STEM, phase contrast measurements are sensitive to the sample Coulomb potential, electric fields, and magnetic fields, all of which deflect the transmitted beam [Shibata, ..., Ikuhara et al., Nature Physics 8, 611 (2012); Scientific Reports 5, 10040 (2015); Ultramicroscopy 165, 42 (2016)].
+In STEM, phase contrast measurements are sensitive to the sample Coulomb potential, electric fields, and magnetic fields, all of which deflect the transmitted beam [@shibata2012; @shibata2015; @krajnak2016].
 
 :::{figure} ../../images/slides/slide-070.jpg
 :alt: deflection of the STEM probe by the sample potential, electric fields, and magnetic fields
@@ -22,7 +22,7 @@ Phase contrast in STEM from the sample potential, electric fields, and magnetic 
 
 ## Differential phase contrast
 
-When the probe passes through a region where the potential has a gradient, the whole probe disk shifts in diffraction space. If we measure this shift, we estimate the derivative of the potential, which is the in-plane field. We can estimate the shift from a differential measurement of the top and bottom or left and right sides of the probe with a segmented detector, or from the center of mass (CoM) of the probe on a pixelated detector. With a grid of these measurements, we numerically reconstruct the 2D sample potential, which is differential phase contrast (DPC) imaging.
+When the probe passes through a region where the potential has a gradient, the whole probe disk shifts in diffraction space. If we measure this shift, we estimate the derivative of the potential, which is the in-plane field. We can estimate the shift from a differential measurement of the top and bottom or left and right sides of the probe with a segmented detector, or from the center of mass (CoM) of the probe on a pixelated detector. With a grid of these measurements, we numerically reconstruct the 2D sample potential, which is differential phase contrast (DPC) imaging. Dekkers and de Lang introduced DPC with a split detector [@dekkers1974], and Waddell and Chapman showed that the center of mass of the diffraction pattern gives a linear measurement of the phase gradient [@waddell1979].
 
 :::{figure} ../../videos/dpc-disk-shift.mp4
 :alt: probe amplitude crossing a potential step and the resulting shift of the probe disk
@@ -97,10 +97,10 @@ Reconstructed phase and the Fourier transform amplitude of the reconstruction, C
 
 ## Example: 1D defects in 2D materials
 
-Fang et al. used DPC to map the charge density at 1D defects in MoS₂ and WS₂ [S. Fang et al., Nature Communications 10, 1127 (2019)].
+Fang et al. used DPC to map the charge density at 1D defects in MoS₂ and WS₂ [@fang2019].
 
 :::{figure} ../../images/slides/slide-080.jpg
 :alt: DPC charge density maps of line defects in WS2
 
-DPC measurements of the charge density at line defects in WS₂. S. Fang et al., Nature Communications 10, 1127 (2019).
+DPC measurements of the charge density at line defects in WS₂ [@fang2019].
 :::

@@ -33,8 +33,9 @@ Pushing to `main` runs `.github/workflows/deploy.yml`. In the repository setting
 - `images/slides/slide-NNN.jpg`: slide renders (title bar cropped), numbered by slide in `Opportunities_4DSTEM_Ophus_v04.pptx`. Slides 7, 22, 37, and 92 come from the CCEM school export because the Keynote render of v04 dropped some graphics.
 - `videos/*.mp4`: movies from the lecture, re-encoded to H.264 (at most 960 px wide, no audio). The theme renders them with autoplay and loop; the runtime in `patch_theme.py` mutes them so browsers allow autoplay.
 - `widgets/*.js`: anywidget ES modules embedded with `:::{anywidget} ../../widgets/NAME.js`. Preview them without MyST by serving the repository root and opening `test-widgets.html`.
+- `references.bib`: every reference, with DOIs checked against Crossref. Cite with `[@key]` (parenthetical) or `@key` (narrative); MyST adds a References list to each page.
 - `plugins/answer.mjs`: the `{answer}` directive from the template, available for worked problems.
 
 ## Conventions
 
-Writing follows `Dropbox/Apps/colin_voice.md`: clarity and brevity, no em dashes, no rhetorical questions, citations next to the claims they support.
+Writing follows `Dropbox/Apps/colin_voice.md`: clarity and brevity, no em dashes, no rhetorical questions, citations next to the claims they support. Links are red (the `--msc-accent` color in `style.css`), not the theme's blue.

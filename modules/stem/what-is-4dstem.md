@@ -4,7 +4,7 @@ title: What is 4D-STEM?
 
 # What is 4D-STEM?
 
-In scanning transmission electron microscopy (STEM), we focus the electron beam into a converged probe and raster it over the sample. A conventional STEM detector integrates the scattered electrons over a fixed angular range, for example an annular dark field (ADF) detector, and records one number per probe position. In four-dimensional STEM (4D-STEM), we replace or supplement these detectors with a pixelated detector that records the full diffraction pattern at each probe position. The result is a 4D dataset: two real-space dimensions from the scan and two reciprocal-space dimensions from the detector.
+In scanning transmission electron microscopy (STEM), we focus the electron beam into a converged probe and raster it over the sample. A conventional STEM detector integrates the scattered electrons over a fixed angular range, for example an annular dark field (ADF) detector, and records one number per probe position. In four-dimensional STEM (4D-STEM), we replace or supplement these detectors with a pixelated detector that records the full diffraction pattern at each probe position. The result is a 4D dataset: two real-space dimensions from the scan and two reciprocal-space dimensions from the detector [@ophus2019].
 
 :::{figure} ../../videos/4dstem-scan.mp4
 :alt: STEM geometry with the probe, sample, ADF detector and pixelated detector
@@ -43,7 +43,7 @@ The same experiment with each diffraction image averaged over 7 × 7 probe posit
 :::{figure} ../../images/slides/slide-007.jpg
 :alt: examples of 4D-STEM measurements of resolution, structure and properties
 
-Examples of 4D-STEM measurements, from improved resolution in few layer BN (conventional dark field STEM compared to 4D-STEM ptychography) to structure classification, crystallinity, strain, and orientation across a thin film battery stack. The version of this slide from the lecture shows additional examples from Christian Kübel's group: crystallographic texture of nanocrystalline Pd (A. Kobler et al., Ultramicroscopy 128, 68 (2013)), strain, packing density, and residual strain fields in deformed metallic glasses, and electric fields, potentials, and charge densities at grain boundaries in ferroelectric ceramics (S. Kang et al., Adv. Mat. 35, 2212086 (2023); Acta Mat. 263, 119495 (2024); Nat. Comm. 16, 1305 (2025)).
+Examples of 4D-STEM measurements, from improved resolution in few layer BN (conventional dark field STEM compared to 4D-STEM ptychography) to structure classification, crystallinity, strain, and orientation across a thin film battery stack. The version of this slide from the lecture shows additional examples from Christian Kübel's group: crystallographic texture of nanocrystalline Pd [@kobler2013], residual strain fields and density variations in a deformed metallic glass [@kang2023], the local atomic structure of metallic glasses [@kang2024], the magnetic field in a ferromagnetic amorphous alloy [@kang2025], and electric fields, potentials, and charge densities at grain boundaries in a ferroelectric ceramic (S. Kang et al., in preparation).
 :::
 
 ## Crystalline and amorphous diffraction
@@ -65,7 +65,7 @@ Probe scanned across an amorphous sample. The diffraction pattern is a set of di
 
 ## Example: an ion-irradiated pyrochlore
 
-Savitzky et al. used a single 4D-STEM experiment to map the structure of gadolinium titanate (Gd₂Ti₂O₇) after ion irradiation and annealing [B. Savitzky et al., Microscopy and Microanalysis 27, 712 (2021)]. The starting material is a single crystal with the pyrochlore structure. Ion irradiation amorphizes the near-surface region, and annealing partially recrystallizes it into fluorite grains. The 4D-STEM scan across the cross section passes through all of these regions.
+Savitzky et al. used a single 4D-STEM experiment to map the structure of gadolinium titanate (Gd₂Ti₂O₇) after ion irradiation and annealing [@savitzky2021]. The starting material is a single crystal with the pyrochlore structure. Ion irradiation amorphizes the near-surface region, and annealing partially recrystallizes it into fluorite grains. The 4D-STEM scan across the cross section passes through all of these regions.
 
 ::::{grid} 1 1 3 3
 :::{figure} ../../videos/gto-irradiation.mp4
@@ -88,7 +88,7 @@ Annealing of the damaged layer.
 :::{figure} ../../images/slides/slide-012.jpg
 :alt: diffraction patterns from single crystal pyrochlore, amorphous, and recrystallized fluorite regions
 
-Diffraction patterns recorded across the sample, from single crystal pyrochlore, through amorphous and mixed regions, to polycrystalline and recrystallized fluorite. B. Savitzky et al., Microscopy and Microanalysis 27, 712 (2021).
+Diffraction patterns recorded across the sample, from single crystal pyrochlore, through amorphous and mixed regions, to polycrystalline and recrystallized fluorite [@savitzky2021].
 :::
 
 ## py4DSTEM
@@ -104,5 +104,5 @@ We developed [py4DSTEM](https://github.com/py4dstem/py4DSTEM), an open source Py
 :::{figure} ../../images/slides/slide-013.jpg
 :alt: py4DSTEM overview and development team
 
-py4DSTEM overview and development team. B. Savitzky et al., Microscopy and Microanalysis 27, 712 (2021).
+py4DSTEM overview and development team [@savitzky2021].
 :::

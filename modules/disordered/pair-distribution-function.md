@@ -21,7 +21,7 @@ Amorphous diffraction halos encode the local structure factor.
 
 ## The electron pair distribution function
 
-The pair distribution function (PDF) $g(r)$ is the probability of finding an atom inside a radial shell at distance $r$ from an atom, normalized to the mean density. To test the measurement, we simulated diffraction from amorphous tantalum with abTEM multislice simulations, using atomic coordinates from Jun Ding and Mark Asta [Scientific Reports 5, 1 (2015)], so that the ground truth PDF is known.
+The pair distribution function (PDF) $g(r)$ is the probability of finding an atom inside a radial shell at distance $r$ from an atom, normalized to the mean density. To test the measurement, we simulated diffraction from amorphous tantalum with abTEM multislice simulations [@madsen2021], using atomic coordinates from Jun Ding and Mark Asta [@ding2015], so that the ground truth PDF is known.
 
 :::{figure} ../../images/slides/slide-059.jpg
 :alt: amorphous tantalum model and its ground truth PDF
@@ -53,10 +53,10 @@ PDFs computed from elastic scattering only and from patterns with synthetic inel
 
 ## Radial distribution function of amorphous silicon
 
-In experiments, we convert the mean diffraction pattern to polar coordinates and compute the radial distribution function (RDF), which shows the nearest neighbor (NN) and next nearest neighbor (NNN) shells of amorphous silicon. Accurate RDF measurements require both a small convergence semiangle and intensity measurements out to high scattering angles [B. Savitzky et al., Microscopy and Microanalysis 27, 712 (2021)].
+In experiments, we convert the mean diffraction pattern to polar coordinates and compute the radial distribution function (RDF), which shows the nearest neighbor (NN) and next nearest neighbor (NNN) shells of amorphous silicon. Accurate RDF measurements require both a small convergence semiangle and intensity measurements out to high scattering angles [@savitzky2021].
 
 :::{figure} ../../images/slides/slide-063.jpg
 :alt: mean diffraction pattern of amorphous silicon in cartesian and polar coordinates
 
-Mean diffraction pattern of amorphous silicon and its polar transform. B. Savitzky et al., Microscopy and Microanalysis 27, 712 (2021).
+Mean diffraction pattern of amorphous silicon and its polar transform [@savitzky2021].
 :::

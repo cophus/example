@@ -93,9 +93,17 @@ a.msc-search-hit.active {
   white-space: nowrap;
 }
 
-/* Article links underline in the accent color (theme default is blue). */
-article a:not(.msc-search-hit) {
+/* Article links, including citations and cross-references, in the accent
+   red instead of the theme's default blue. */
+article a:not(.msc-search-hit),
+article a:not(.msc-search-hit):visited,
+.myst-cite a,
+cite a {
+  color: var(--msc-accent) !important;
   text-decoration-color: var(--msc-accent) !important;
+}
+article a:not(.msc-search-hit):hover {
+  opacity: 0.8;
 }
 
 /* ---------- Answer blocks ----------

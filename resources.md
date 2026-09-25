@@ -6,9 +6,11 @@ title: Resources
 
 ## Papers
 
-- **4D-STEM review:** C. Ophus, "Four-dimensional scanning transmission electron microscopy (4D-STEM): from scanning nanodiffraction to ptychography and beyond," Microscopy and Microanalysis 25, 563 (2019).
-- **py4DSTEM:** B. H. Savitzky et al., "py4DSTEM: a software package for four-dimensional scanning transmission electron microscopy data analysis," Microscopy and Microanalysis 27, 712 (2021).
-- **Phase retrieval metrics:** G. Varnavides et al., "Beyond contrast transfer: spectral SNR as a dose-aware metric for STEM phase retrieval," [arXiv:2507.19476](https://arxiv.org/abs/2507.19476).
+- **4D-STEM review:** [@ophus2019]
+- **py4DSTEM:** [@savitzky2021]
+- **Orientation mapping in py4DSTEM:** [@ophus2022]
+- **Phase retrieval algorithms:** [@varnavides2023]
+- **Phase retrieval metrics:** [@varnavides2025]
 
 ## Software
 

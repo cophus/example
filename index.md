@@ -6,7 +6,7 @@ site:
 
 # Opportunities for 4D-STEM
 
-Four-dimensional scanning transmission electron microscopy (4D-STEM) records a full 2D diffraction pattern at every position of a 2D grid of probe positions. Every image, spectrum, and map we can compute from a conventional STEM experiment can be computed after the fact from a 4D-STEM dataset, and many measurements that conventional detectors cannot make, including strain, crystal orientation, local atomic ordering in amorphous materials, and the projected electrostatic potential, become routine. This site is a written version of a lecture I give at electron microscopy schools, with the figures, movies, and interactive widgets from the lecture.
+Four-dimensional scanning transmission electron microscopy (4D-STEM) records a full 2D diffraction pattern at every position of a 2D grid of probe positions. Every image, spectrum, and map we can compute from a conventional STEM experiment can be computed after the fact from a 4D-STEM dataset [@ophus2019], and many measurements that conventional detectors cannot make, including strain, crystal orientation, local atomic ordering in amorphous materials, and the projected electrostatic potential, become routine. This site is a written version of a lecture I give at electron microscopy schools, with the figures, movies, and interactive widgets from the lecture.
 
 :::{figure} videos/4dstem-scan.mp4
 :alt: a converged electron probe scanned over a sample, with a diffraction pattern recorded on a pixelated detector at each position

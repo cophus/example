@@ -8,7 +8,7 @@ Organic semiconductors and block copolymers have many knobs that tune their prop
 
 ## Morphology of organic films
 
-In the conjugated polymer P3HT (poly(3-hexylthiophene-2,5-diyl)), the in-plane field effect transistor mobility changes by more than an order of magnitude with regioregularity and processing, which change the orientation of the crystalline domains [H. Sirringhaus et al., Nature 401, 685 (1999)]. Self-assembled block copolymers form spheres, cylinders, lamellae, and more complex phases depending on the packing parameter [C. Li et al., Chemical Society Reviews 49, 4681 (2020)].
+In the conjugated polymer P3HT (poly(3-hexylthiophene-2,5-diyl)), the in-plane field effect transistor mobility changes by more than an order of magnitude with regioregularity and processing, which change the orientation of the crystalline domains [@sirringhaus1999]. Self-assembled block copolymers form spheres, cylinders, lamellae, and more complex phases depending on the packing parameter [@li2020].
 
 :::{figure} ../../images/slides/slide-020.jpg
 :alt: P3HT domain orientation and mobility, and block copolymer morphologies
@@ -16,13 +16,13 @@ In the conjugated polymer P3HT (poly(3-hexylthiophene-2,5-diyl)), the in-plane f
 Domain orientation and field effect mobility in P3HT (left) and block copolymer morphologies as a function of packing parameter (right).
 :::
 
-TEM images and phase diagrams measure how the phase separation changes with composition and molecular weight [W. Shi et al., J. Polymer Science Part B 54, 169 (2016)], and electron tomography resolves the 3D morphology [Jinnai, ..., Ikuhara et al., Accounts of Chemical Research 50, 1293 (2017)]. AFM shows that low molecular weight P3HT forms separated rod-like crystallites while high molecular weight chains connect crystallites [R. J. Kline et al., Macromolecules 38, 3312 (2005)]. Our goal is to transform these sketches into measured structure maps.
+TEM images and phase diagrams measure how the phase separation changes with composition and molecular weight [@shi2016], and electron tomography resolves the 3D morphology [@jinnai2017]. AFM shows that low molecular weight P3HT forms separated rod-like crystallites while high molecular weight chains connect crystallites [@kline2005]. Our goal is to transform these sketches into measured structure maps.
 
 :::{figure} ../../videos/block-copolymer-tomography.mp4
 :alt: tomographic reconstruction of a block copolymer morphology
 :width: 60%
 
-3D morphology of a polymeric self-assembly from transmission electron microtomography. Jinnai, ..., Ikuhara et al., Accounts of Chemical Research 50, 1293 (2017).
+3D morphology of a polymeric self-assembly from transmission electron microtomography [@jinnai2017].
 :::
 
 :::{figure} ../../images/slides/slide-022.jpg
@@ -33,7 +33,7 @@ Conventional TEM and AFM characterize phase separation and some morphology, whil
 
 ## Orientation mapping of organic molecular crystals
 
-Panova, Ophus et al. mapped the orientation of the π-stacking in organic semiconductor films [O. Panova*, C. Ophus* et al., Nature Materials 18, 860 (2019)]. We detect the Bragg peaks in each diffraction pattern with template matching: we build an image template from a vacuum reference probe or a synthetic disk, find the peaks by image correlation, record them, and move to the next pattern. The detected peak directions give the local orientation of the molecular stacking.
+Panova, Ophus et al. mapped the orientation of the π-stacking in organic semiconductor films [@panova2019]. We detect the Bragg peaks in each diffraction pattern with template matching: we build an image template from a vacuum reference probe or a synthetic disk, find the peaks by image correlation, record them, and move to the next pattern. The detected peak directions give the local orientation of the molecular stacking.
 
 :::{figure} ../../images/slides/slide-023.jpg
 :alt: Bragg peak detection in diffraction patterns of an organic film
@@ -59,17 +59,17 @@ DIO additive: small single-orientation domains.
 :::{figure} ../../images/slides/slide-025.jpg
 :alt: orientation maps of the two organic films
 
-Orientation maps of the two films, colored by the in-plane orientation of the π-stacking. O. Panova*, C. Ophus* et al., Nature Materials 18, 860 (2019).
+Orientation maps of the two films, colored by the in-plane orientation of the π-stacking [@panova2019].
 :::
 
 ## Block copolymer: polystyrene–polyethylene oxide
 
-A polystyrene–polyethylene oxide block copolymer (PS-b-PEO) contains an amorphous PS phase and a crystalline PEO phase [M. Chen et al., Macromolecules 57, 5629 (2024)]. Stained dark field TEM shows the morphology but not the crystallinity. In 4D-STEM, each diffraction pattern contains both Bragg peaks from crystalline PEO and an amorphous halo from PS, so virtual dark field images separate the two phases.
+A polystyrene–polyethylene oxide block copolymer (PS-b-PEO) contains an amorphous PS phase and a crystalline PEO phase [@chen2024]. Stained dark field TEM shows the morphology but not the crystallinity. In 4D-STEM, each diffraction pattern contains both Bragg peaks from crystalline PEO and an amorphous halo from PS, so virtual dark field images separate the two phases.
 
 :::{figure} ../../images/slides/slide-026.jpg
 :alt: structure of PS-b-PEO and dark field TEM morphology
 
-Chemical structure and lamellar morphology of PS-b-PEO. M. Chen et al., Macromolecules 57, 5629 (2024).
+Chemical structure and lamellar morphology of PS-b-PEO [@chen2024].
 :::
 
 :::{figure} ../../images/slides/slide-027.jpg
@@ -83,5 +83,5 @@ We calculate the crystalline PEO map from a principal component analysis of the 
 :::{figure} ../../images/slides/slide-028.jpg
 :alt: PEO orientation map and grain size distribution
 
-PEO orientation map and grain size distribution. M. Chen et al., Macromolecules 57, 5629 (2024).
+PEO orientation map and grain size distribution [@chen2024].
 :::

@@ -43,6 +43,8 @@ project:
     SRO: short range order
     STEM: scanning transmission electron microscopy
     TEM: transmission electron microscopy
+  bibliography:
+    - references.bib
   plugins:
     - plugins/answer.mjs
   exclude:
