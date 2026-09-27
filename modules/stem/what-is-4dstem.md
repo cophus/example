@@ -24,16 +24,10 @@ Because the full diffraction pattern is stored, we can define any detector after
 
 Modern direct electron detectors run at kHz to tens of kHz frame rates, which makes 4D-STEM data volumes large. In 2018, a Gatan K2 IS dataset with 256 × 256 probe positions and 1920 × 1792 pixel diffraction patterns contained 225 billion pixels (420 gigabytes) and was recorded in approximately 3 minutes. In 2024, current detectors record 1 terabyte in 6 seconds. Manipulating and analyzing these datasets requires efficient and robust algorithms and software.
 
-:::{figure} ../../images/slides/slide-005.jpg
-:alt: probe rastered over a WS2 crystal with diffraction patterns recorded on a direct electron detector
-
-A converged probe rastered over a tungsten disulfide 2D crystal (TEAM I microscope), with the diffraction pattern recorded at each position on a direct electron detector (Gatan K2 IS). Each diffraction image shown is an average over 40 × 40 probe positions.
-:::
-
 :::{figure} ../../images/slides/slide-006.jpg
 :alt: the same dataset shown at finer sampling with data volume numbers
 
-The same experiment with each diffraction image averaged over 7 × 7 probe positions, showing how quickly the number of recorded patterns grows.
+A converged probe rastered over a tungsten disulfide 2D crystal (TEAM I microscope), with the diffraction pattern at each position recorded on a direct electron detector (Gatan K2 IS). Each diffraction image shown is an average over 7 × 7 probe positions.
 :::
 
 ## Why do 4D-STEM experiments?
@@ -65,9 +59,9 @@ Probe scanned across an amorphous sample. The diffraction pattern is a set of di
 
 ## Example: an ion-irradiated pyrochlore
 
-Savitzky et al. used a single 4D-STEM experiment to map the structure of gadolinium titanate (Gd₂Ti₂O₇) after ion irradiation and annealing [@savitzky2021]. The starting material is a single crystal with the pyrochlore structure. Ion irradiation amorphizes the near-surface region, and annealing partially recrystallizes it into fluorite grains. The 4D-STEM scan across the cross section passes through all of these regions.
+Savitzky et al. used a single 4D-STEM experiment to map the structure of gadolinium titanate (Gd₂Ti₂O₇) after ion irradiation and annealing [@savitzky2021]. The starting material is a single crystal with the pyrochlore structure. Ion irradiation amorphizes the near-surface region, and annealing partially recrystallizes it into fluorite grains. The 4D-STEM scan across the cross section passes through all of these regions, and the diffraction patterns below show each of them.
 
-::::{grid} 1 1 3 3
+::::{grid} 1 1 2 2
 :::{figure} ../../videos/gto-irradiation.mp4
 :alt: single crystal pyrochlore under ion irradiation
 
@@ -77,11 +71,6 @@ Ion irradiation of single crystal Gd₂Ti₂O₇.
 :alt: annealing of the irradiated layer
 
 Annealing of the damaged layer.
-:::
-:::{figure} ../../videos/gto-4dstem.mp4
-:alt: 4D-STEM scan across the sample
-
-4D-STEM scan across the cross section.
 :::
 ::::
 
@@ -100,9 +89,3 @@ We developed [py4DSTEM](https://github.com/py4dstem/py4DSTEM), an open source Py
 - phase, orientation, and strain maps of crystalline materials;
 - short range order (SRO) and fluctuation electron microscopy (FEM) of amorphous materials;
 - phase contrast images from differential phase contrast, parallax imaging, ptychography, and ptychographic atomic electron tomography.
-
-:::{figure} ../../images/slides/slide-013.jpg
-:alt: py4DSTEM overview and development team
-
-py4DSTEM overview and development team [@savitzky2021].
-:::

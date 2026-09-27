@@ -95,18 +95,12 @@ DGP reconstruction of gold nanoparticles as a function of time, with line profil
 
 The same method reconstructs a metal-organic framework (MOSS-6) from data recorded at 100 e⁻/Å², using 5 slices and 2 probe modes, with data from @li2025.
 
-::::{grid} 1 1 2 2
 :::{figure} ../../videos/dgp-mof.mp4
+:width: 60%
 :alt: DGP reconstruction of a metal-organic framework over iterations
 
-DGP reconstruction of MOSS-6 over the iterations.
+DGP reconstruction of MOSS-6 over the iterations, from data recorded with a 20 mrad probe [@mccray2025].
 :::
-:::{figure} ../../images/slides/slide-088.jpg
-:alt: MOSS-6 reconstruction, single probe position diffraction, and atomic structure
-
-A single diffraction pattern at 20 mrad and the MOSS-6 atomic structure [@mccray2025].
-:::
-::::
 
 For twisted bilayer WSe₂ data from @nguyen2024, we used a deep image prior (DIP) reconstruction with 12 slices of 1 Å, 6 probe modes, a softplus final activation layer to enforce positivity, and a small total variation loss to prevent artifacts.
 

@@ -30,7 +30,7 @@ Pushing to `main` runs `.github/workflows/deploy.yml`. In the repository setting
 
 - `index.md`, `resources.md`: landing and resource pages.
 - `modules/<topic>/*.md`: one folder per section of the lecture.
-- `images/slides/slide-NNN.jpg`: slide renders (title bar cropped), numbered by slide in `Opportunities_4DSTEM_Ophus_v04.pptx`. Slides 7, 22, 37, and 92 come from the CCEM school export because the Keynote render of v04 dropped some graphics.
+- `images/slides/slide-NNN.jpg`: slide renders numbered by slide in `Opportunities_4DSTEM_Ophus_v04.pptx`. They come from a copy of the deck with every title shape deleted (exported with Keynote), trimmed to their content, with a few slides cropped to avoid repeating a neighbouring figure or movie. Slides 7, 22, 37, and 92 come from the CCEM school export, cropped below the title, because the Keynote render of v04 dropped some graphics on those slides.
 - `videos/*.mp4`: movies from the lecture, re-encoded to H.264 (at most 960 px wide, no audio). The theme renders them with autoplay and loop; the runtime in `patch_theme.py` mutes them so browsers allow autoplay.
 - `widgets/*.js`: anywidget ES modules embedded with `:::{anywidget} ../../widgets/NAME.js`. Preview them without MyST by serving the repository root and opening `test-widgets.html`.
 - `references.bib`: every reference, with DOIs checked against Crossref. Cite with `[@key]` (parenthetical) or `@key` (narrative); MyST adds a References list to each page.

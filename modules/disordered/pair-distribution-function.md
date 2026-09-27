@@ -6,18 +6,12 @@ title: Pair distribution function
 
 Ideally, the diffracted signal from a thin sample is the squared magnitude of the 2D Fourier transform of the projected potential, convolved with the probe in diffraction space. For an amorphous sample, the positions and shapes of the diffuse halos in each diffraction pattern act as a fingerprint for the local structure factor, which is set by the mean atomic arrangement. Interpretation is complicated by multiple and dynamical scattering (thickness effects), inelastic background, and other contributions beyond the elastic diffraction we want to measure.
 
-::::{grid} 1 1 2 2
 :::{figure} ../../videos/amorphous-scan.mp4
+:width: 60%
 :alt: probe scanned across an amorphous sample
 
 A probe scanned over an amorphous sample.
 :::
-:::{figure} ../../images/slides/slide-058.jpg
-:alt: amorphous diffraction and summary of interpretation challenges
-
-Amorphous diffraction halos encode the local structure factor.
-:::
-::::
 
 ## The electron pair distribution function
 

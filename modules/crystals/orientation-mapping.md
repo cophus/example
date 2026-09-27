@@ -30,12 +30,7 @@ A library of calculated diffraction patterns over the unique orientations [@ophu
 
 The tutorial notebook `orientation_01_AuAgPd_wire.ipynb` in the [py4DSTEM tutorials](https://github.com/py4DSTEM/py4DSTEM_tutorials) walks through the full workflow on a AuAgPd nanowire: building the probe template, detecting Bragg peaks, computing the orientation library, fitting the orientation at every probe position, and plotting the in-plane and out-of-plane orientation maps.
 
-::::{grid} 1 1 2 2
-:::{figure} ../../images/slides/slide-046.jpg
-:alt: probe template in the tutorial notebook
-
-Probe template.
-:::
+::::{grid} 1 1 3 3
 :::{figure} ../../images/slides/slide-047.jpg
 :alt: detected Bragg peaks in the tutorial notebook
 

@@ -6,18 +6,12 @@ title: Strain mapping
 
 When a crystal is strained, its lattice spacings change, and the Bragg disks in its diffraction pattern move by the inverse amount. A lattice in compression produces an increased spot spacing and a lattice in tension produces a decreased spot spacing. By measuring the Bragg disk positions at each probe position to a small fraction of a pixel, we can map the full 2D strain tensor over large fields of view.
 
-::::{grid} 1 1 2 2
 :::{figure} ../../videos/strain-scan.mp4
+:width: 70%
 :alt: probe scanned along a strained crystal
 
-A probe scanned along a crystal that is in compression at one end and in tension at the other.
+A probe scanned along a crystal that is in compression at one end and in tension at the other. The spot spacing increases under compression and decreases under tension.
 :::
-:::{figure} ../../images/slides/slide-030.jpg
-:alt: diffraction spot spacing for compression and tension
-
-Compression increases the diffraction spot spacing and tension decreases it.
-:::
-::::
 
 ## Disk positions from correlation template matching
 
